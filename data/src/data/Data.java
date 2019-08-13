@@ -4,11 +4,11 @@ import javax.swing.JOptionPane;
 
 public class Data {
 
-	public static void main1(String[] args) {
+	public static void tste(String[] args) {
 		int dia, mes, ano = 0;
-		dia = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o dia!"));
-		mes = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o mês!"));
-		ano = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o ano!"));
+		dia = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o dia:"));
+		mes = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o mês:"));
+		ano = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o ano:"));
 
 		if (dia + 1 < 28) {
 			JOptionPane.showMessageDialog(null, (dia + 1) + "/" + mes + "/" + ano);

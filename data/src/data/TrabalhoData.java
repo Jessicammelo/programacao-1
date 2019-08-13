@@ -24,7 +24,6 @@ public class TrabalhoData {
 						dia++;
 						JOptionPane.showMessageDialog(null, dia + "/" + mes + "/" + ano);
 					}
-
 				} else {
 					if (dia == 31 && mes == 12) {
 						dia = 1;
@@ -57,13 +56,10 @@ public class TrabalhoData {
 						mes++;
 						JOptionPane.showMessageDialog(null, dia + "/" + mes + "/" + ano);
 					}
-
 				}
-
 			}
 		} else {
 			JOptionPane.showMessageDialog(null, "Sua data é inválida!");
 		}
 	}
-
 }
