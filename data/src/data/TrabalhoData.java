@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class TrabalhoData {
 
-	public static void main(String[] args) {
+	public static void tste(String[] args) {
 		int dia, mes, ano = 0;
 		dia = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia:"));
 		mes = Integer.parseInt(JOptionPane.showInputDialog("Digite o mês:"));
