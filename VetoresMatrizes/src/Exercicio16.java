@@ -10,7 +10,7 @@
 
 public class Exercicio16 {
 
-	public static void main(String[] args) {
+	public static void tste(String[] args) {
 		
 
 		int c[] = { 1, 1, 0, 1, 0, -1, 0, 0, 2 };

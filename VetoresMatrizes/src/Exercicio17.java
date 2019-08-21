@@ -3,7 +3,7 @@
 //fazer 16
 public class Exercicio17 {
 
-	public static void main(String[] args) {
+	public static void tste(String[] args) {
 
 		int Seq1[] = { 8, 2, 4, 3, 4, 2, 5, 1 };
 		int Seq2[] = { 0, 1, 9, 5, 2, 3, 6, 7 };

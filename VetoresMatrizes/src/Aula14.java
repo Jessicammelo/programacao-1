@@ -2,7 +2,7 @@
 // somar os elementos do vetor nas posiçoes  0, 2, 4
 // ordenar os elementos do vetor (usar enquando)
 public class Aula14 {
-	public static void main(String[] args) {
+	public static void tste(String[] args) {
 		int aux = 0;
 		int vetor[] = { 2, 19, 15, 6, 9 };
 
