@@ -11,26 +11,22 @@ import javax.swing.JOptionPane;
 public class Exercicio5 {
 
 	public static void main(String[] args) {
-		char vetorA[] = new char[5];
-		char vetorB[] = new char[5];
-		String letras = " ";
-		int posicao = 5;
+		char vetorA[] = new char[10];
+		char vetorB[] = new char[10];
 
-		for (int i = 0; i <= vetorA.length; i++) {
-			vetorA[i] = letras.charAt(vetorA[i]);
-			JOptionPane.showInputDialog("Digite dez letras");
-			vetorB[i] = letras.charAt(vetorB[i]);
-			JOptionPane.showInputDialog("Digite dez letras");
-		}
+		String vet1 = JOptionPane.showInputDialog("Digite dez letras");
+		vetorA = vet1.toCharArray();
+		String vet2 = JOptionPane.showInputDialog("Digite dez letras");
+		vetorB = vet2.toCharArray();
 		
-		for (int i = 0; i <=vetorA.length; i++) {
-			vetorA[i] = vetorB[i + posicao];
+		for (int i = 0; i < 10; i++) {
+			char valorA = vetorA[i];
+			char valorB = vetorB[9-i];
+			vetorA[i] = valorB;
+			vetorB[9-i] = valorA;
+		}
 
-			vetorB[i + posicao] = vetorA[i];
-			posicao--;
-		}
-		
-		for (int i = 0; i <= vetorA.length; i++) {
+		for (int i = 0; i <10; i++) {
 			System.out.println(vetorA[i] + " " + vetorB[i] + " ");
 		}
 
