@@ -10,11 +10,11 @@
 
 public class Exercicio16 {
 
-	public static void tste(String[] args) {
+	public static void main(String[] args) {
 		
 
 		int c[] = { 1, 1, 0, 1, 0, -1, 0, 0, 2 };
-		int m[] = new int[c.length];
+		//int m[] = new int[c.length];
 		int p[] = { 2, -10, 1, 0, 18, 37, 17, 19, 5 };
 		char letra[] = { ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
 				't', 'u', 'v', 'x', 'z' };
