@@ -8,6 +8,10 @@ public class ExercicioMatriz08 {
 		int totalDiagonal = 0;
 		int matriz[][] = { { 3, 5, 7, 2 }, { 21, 34, 56, 87 }, { 67, 78, 12, 35 }, { 9, 34, 57, 86 } };
 
+		ExercicioMatriz08 exer = new ExercicioMatriz08();
+		//Exercicio5 exercicio5 = new Exercicio5();
+		//exercicio5.exibir(vetorA, vetorB);
+		
 		// realizando somatório da diagonal principal
 		// ou seja, índice da linha e coluna são iguais
 
@@ -34,13 +38,13 @@ public class ExercicioMatriz08 {
 		}
 		System.out.print("\nItem b) menor valor par: " + valorPar);
 
-		int linha = Integer.parseInt(JOptionPane.showInputDialog(" Digite valor da linha:"));
+		int linha = exer.linha();
 		while (linha < 1 || linha > matriz.length) {
-			linha = Integer.parseInt(JOptionPane.showInputDialog(" Digite valor da linha:"));
+			linha = exer.linha();
 		}
-		int coluna = Integer.parseInt(JOptionPane.showInputDialog(" Digite valor da coluna:"));
+		int coluna = exer.coluna();
 		while (coluna < 1 || coluna > matriz.length) {
-			coluna = Integer.parseInt(JOptionPane.showInputDialog(" Digite valor da coluna:"));
+			coluna = exer.coluna();
 		}
 		System.out.print("\nItem c) valor linha e coluna: " + matriz[linha - 1][coluna - 1]);
 
@@ -50,11 +54,23 @@ public class ExercicioMatriz08 {
 				matrizT[linha][coluna] = matriz[coluna][linha];
 			}
 		}
+		exer.exibir(linha, coluna, matrizT);
+		System.out.print("");
+	}
+	
+	public int linha() {
+		return Integer.parseInt(JOptionPane.showInputDialog(" Digite valor da linha:"));
+	}
+	
+	public int coluna() {
+		return Integer.parseInt(JOptionPane.showInputDialog(" Digite valor da coluna:"));
+	}
+	
+	public void exibir(int linha, int coluna, int matrizT[][]) {
 		for (linha = 0; linha < matrizT.length; linha++) {
 			for (coluna = 0; coluna < matrizT.length; coluna++) {
 				System.out.print( matrizT[linha][coluna] + "\n ");
 			}
 		}
-		System.out.print("");
 	}
 }

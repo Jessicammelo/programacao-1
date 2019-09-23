@@ -8,20 +8,19 @@ public class Exercicio6 {
 		
 		int vetor[] = {-1,7,-23,-15,9,-6,30,47};
 		int vetorPositivo[] = new int[8];
-		int posicao = 0;
+		Exercicio6Teste teste = new Exercicio6Teste();		
+		vetorPositivo = teste.somentePositivo(vetor);
+		Exercicio6 exer6 = new Exercicio6();
+		exer6.dizOi();
 		
-		for(int i = 0; i < vetor.length;i++) {
-			if(vetor[i] > 0 ) {
-				vetorPositivo[posicao] = vetor[i];
-				posicao++;
-			}
-			System.out.println(vetor[i]);
-		}
 		System.out.println();
-		for(int i = 0; i < vetor.length;i++) {
-			System.out.println(vetorPositivo[i]);
-		}
+		
+		teste.exibir(vetor, vetorPositivo);
 			
+	}
+	
+	public void dizOi() {
+		System.out.println("oi");
 	}
 
 }

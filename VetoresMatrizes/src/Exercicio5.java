@@ -14,22 +14,33 @@ public class Exercicio5 {
 		char vetorA[] = new char[10];
 		char vetorB[] = new char[10];
 
-		String vet1 = JOptionPane.showInputDialog("Digite dez letras");
-		vetorA = vet1.toCharArray();
-		String vet2 = JOptionPane.showInputDialog("Digite dez letras");
-		vetorB = vet2.toCharArray();
-		
+		Exercicio5 exer = new Exercicio5();	
+	
+		vetorA = exer.getLetras();
+		vetorB = exer.getLetras();
+
 		for (int i = 0; i < 10; i++) {
 			char valorA = vetorA[i];
-			char valorB = vetorB[9-i];
+			char valorB = vetorB[9 - i];
 			vetorA[i] = valorB;
-			vetorB[9-i] = valorA;
+			vetorB[9 - i] = valorA;
 		}
-
-		for (int i = 0; i <10; i++) {
+		
+		exer.exibir(vetorA, vetorB);
+	}
+	
+	public char[] getLetras() {
+		String vet1 = JOptionPane.showInputDialog("Digite dez letras");
+		return vet1.toCharArray();
+	}
+	
+	public void exibir(char vetorA[], char vetorB[]) {
+		for (int i = 0; i < 10; i++) {
 			System.out.println(vetorA[i] + " " + vetorB[i] + " ");
 		}
 
 	}
+
+
 
 }
