@@ -1,5 +1,7 @@
 package Quadrante;
 
+import exercicio19.Calculo;
+
 public class Ponto {
 
 	private double x;

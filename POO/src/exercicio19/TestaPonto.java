@@ -4,7 +4,7 @@ import Quadrante.Ponto;
 
 public class TestaPonto {
 
-	public static void main(String[] args) {
+	public static void teste(String[] args) {
 
 		TestaPonto testePonto = new TestaPonto();// para acessar o metodo do main preciso criar um new da classe
 		Calculo calculo = new Calculo();
@@ -31,7 +31,7 @@ public class TestaPonto {
 	}
 	//metodos criados sempre fora do main
 
-	public double somatorioX(Ponto vPontos[]) {// se fosse um void colocaria um sistem
+	public double somatorioX(Ponto vPontos[]) {// se fosse um void colocaria o system
 		double somaX = 0;
 		for (int i = 0; i < vPontos.length; i++) {
 			somaX += vPontos[i].getX();
@@ -43,7 +43,6 @@ public class TestaPonto {
 	public double somatorioY(Ponto vPontos[]) {
 		double somaY = 0;
 		for (int i = 0; i < vPontos.length; i++) {
-
 			somaY += vPontos[i].getY();
 		}
 		return somaY;
