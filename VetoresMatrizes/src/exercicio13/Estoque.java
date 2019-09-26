@@ -37,7 +37,7 @@ public class Estoque {
 		//maior ou igual ao parâmetro recebido.
 		public boolean verificarDisponibilidade(int quant) {
 			boolean temProduto;
-			if(quant > 0) {
+			if(getQuant() > 0) {
 				temProduto = true;
 				JOptionPane.showMessageDialog(null,"true: 'Tem produto disponível'");
 			}else {
@@ -56,7 +56,7 @@ public class Estoque {
 		//Caso contrário, retomar FALSE. 
 		public boolean retirarProduto(int quant) {
 			int quantProdutoRetirado = Integer.parseInt(JOptionPane.showInputDialog("digite quantidade de produtos que serão retirados:"));
-			if(quant > 0) {
+			if(getQuant() > 0) {
 				 double total = quant - quantProdutoRetirado;
 				 JOptionPane.showMessageDialog(null,"Retirada realizada com sucesso");
 				 return total > 0;
