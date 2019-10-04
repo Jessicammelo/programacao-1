@@ -2,14 +2,11 @@ package exercicio14;
 
 public class EntradaCinema {
 
-	
 	private String dataFilme;
 	private int horario;
 	private String sala;
 	private double valor;
 	private String valorDesconto;
-	
-	
 
 	public String getDataFilme() {
 		return dataFilme;
@@ -42,24 +39,24 @@ public class EntradaCinema {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	
-	public double CalculaDesconto(String dataNasc, String data) {
-		int idade = Integer.parseInt(data - dataNasc);	
-		if(idade <= 12) {
-	 double valorDesconto = getValor() / 2;
-		}
-		return valorDesconto;
+
+	//public double CalculaDesconto(String dataNasc, String data) {
+		// int idade = Integer.parseInt(data - dataNasc);
+		// if (idade <= 12) {
+		// double valorDesconto = getValor() / 2;
 	}
-	
-	public double CalculaDesconto(String dataNasc, int numCarteiraEstudante) {
-		
-	}
-	
-	public double CalculaDescontoHorario() {
-		
-	}
-	
-	public String Imprimir() {
-		
-	}
-}
+	// return valorDesconto;
+//}
+
+// public double CalculaDesconto(String dataNasc, int numCarteiraEstudante) {
+
+// }
+
+// public double CalculaDescontoHorario() {
+
+// }
+
+// public String Imprimir() {
+
+// }
+//}
