@@ -69,6 +69,6 @@ public class Carro {
 	public String imprimir() {
 		return "Carro mais caro: " + getPreco() + "\nMarca: " + getMarca()+
 				"\nTodos os carros:" + getLocalizacao() + 
-				"\nmais caro " + getPreco() + "\nmais barato " + getPreco();// n terminei
+				"\nmais caro " + getPreco() + "\nmais barato " + getPreco();
 	}
 }
