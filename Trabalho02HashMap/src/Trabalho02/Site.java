@@ -38,7 +38,13 @@ public class Site {
 	}
 
 	public String toString() {
-		return "Nome do site: " + getNome() + " \nEndereço: " + getEndereco() + " \nStatus: " + isStatus();
+		String status;
+		if(isStatus() == true) {
+			status = "Livre";
+		}else {
+			status = "Bloqueado";
+		}
+		return "Nome do site: " + getNome() + " \nEndereço: " + getEndereco() + " \nStatus: " + status;
 	}
 
 	public String getSiteOnline() {

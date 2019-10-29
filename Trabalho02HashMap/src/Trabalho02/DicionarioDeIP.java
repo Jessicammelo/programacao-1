@@ -19,7 +19,7 @@ public class DicionarioDeIP {
 		if (site.isStatus()) {
 			System.out.println(site.toString());
 		} else {
-			System.out.println("[" + site.getNome() + "]" + " site não está funcionando! ");
+			System.out.println("[" + site.getNome() + "]" + " esse site não está funcionando! ");
 		}
 
 	}
