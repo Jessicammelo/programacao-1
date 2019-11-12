@@ -1,13 +1,20 @@
 package TrabalhoPratico01;
 
-import java.io.ObjectInputStream.GetField;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 //nome: Jéssica Melo
 //QUESTÃO1:Quais  são  os tipos  de relacionamentos  entre  classes  e  objetos? 
 //Explique  como  se  identificaa  utilização  de cada um deles.
-//Resposta:
+//Resposta: Temos esses tipos de relacionamentos entre objetos, relacionamento temporário e os 
+//relacionamentos duradouros, o temporário é aquele que um objeto depende/necessita do outro para realizar
+//suas operações, suas funcionalidades e esse tipo relacionamento é chamado de dependência.
+//Que é quando dois objetos um temporariamente necessita do outro. 
+//Já os duradouros são aqueles que enquanto existe o objeto ele está ligado em outro para fazer o que ele
+//tem que fazer esse tipo de relacionamento pode ser associação, composição ou agregação.
+//Associação quando objetos podem usar outros objetos (Pessoa usa anel).
+//Composição quando um objeto pode ser formado por outros objetos(Casa, jardim).
+//Agregação quando um objeto pode conter outros objetos(Sala, sofá, mesa, quadro).
 
 public class Camara {
 	public static void projetosApresentados(ArrayList<Veriador> listaVeriador) {

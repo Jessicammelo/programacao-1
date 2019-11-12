@@ -1,5 +1,6 @@
 package TrabalhoPratico01;
 
+//Jesica Melo
 import java.util.ArrayList;
 
 public class Veriador {
@@ -39,7 +40,7 @@ public class Veriador {
 	}
 
 	public double desempenho() {
-		if(indiceProjetos() == 0) {
+		if (indiceProjetos() == 0) {
 			return 0;
 		}
 		return (projetosAprovados() / getProjetos().size()) * indiceProjetos();
@@ -73,9 +74,9 @@ public class Veriador {
 	}
 
 	public String toString() {
-		return "Nome: " + getNome() + "\n" + getPartido().toString() +
-				"\nDesempenho:" + desempenho() + "\nTotal de projetos apresentados: " 
-				+ getProjetos().size() + "\nProjetos aprovados: " + projetosAprovados() + "\n";
+		return "Nome: " + getNome() + "\n" + getPartido().toString() + "\nDesempenho:" + desempenho()
+				+ "\nTotal de projetos apresentados: " + getProjetos().size() + "\nProjetos aprovados: "
+				+ projetosAprovados() + "\n";
 	}
-	
+
 }

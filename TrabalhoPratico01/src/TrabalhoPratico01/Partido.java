@@ -1,5 +1,6 @@
 package TrabalhoPratico01;
 
+//Jessica Melo
 public class Partido {
 
 	private String nome;
@@ -27,7 +28,7 @@ public class Partido {
 	}
 
 	public String toString() {
-		return "Nome do partido: " + getNome(); 
-		}
+		return "Nome do partido: " + getNome();
+	}
 
 }
