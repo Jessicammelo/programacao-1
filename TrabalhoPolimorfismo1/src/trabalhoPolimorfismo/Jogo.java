@@ -1,4 +1,4 @@
-package trabalhoPolimorvismo;
+package trabalhoPolimorfismo;
 
 //Jéssica Melo
 import java.util.Scanner;
@@ -107,7 +107,7 @@ public class Jogo {
 		int vilaoInt = teclado.nextInt();
 
 		System.out.println(
-				"Digite o número para escolher o heroi:\n 1 Chapolin Colorado;\n 2 Homem Aranha;\n 3 Super Homem;\n 4 Capitão América;\n 5 Flash;\n 6 Lanterna Verde;\n 7 Homem de Ferro;");
+				"Digite o número para escolher o herói:\n 1 Chapolin Colorado;\n 2 Homem Aranha;\n 3 Super Homem;\n 4 Capitão América;\n 5 Flash;\n 6 Lanterna Verde;\n 7 Homem de Ferro;");
 		int heroiInt = teclado.nextInt();
 
 		Vilao vilao = null;

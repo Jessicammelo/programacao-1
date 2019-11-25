@@ -1,4 +1,4 @@
-package trabalhoPolimorvismo;
+package trabalhoPolimorfismo;
 //Jéssica Melo
 public class SuperPoder {
 
