@@ -124,6 +124,8 @@ public class Jogo {
 		case 4:
 			vilao = octopus;
 			break;
+		default:
+			vilao = duendeVerde;
 		}
 
 		SuperHeroi heroi = null;
@@ -149,6 +151,8 @@ public class Jogo {
 		case 7:
 			heroi = homemDeFerro;
 			break;
+		default:
+			heroi = chapolinColorado;
 		}
 
 		System.out.println(heroi.getNome() + " versus " + vilao.getNome());
@@ -158,5 +162,6 @@ public class Jogo {
 		} else {
 			System.out.println("O vilão venceu!!");
 		}
+		teclado.close();
 	}
 }
