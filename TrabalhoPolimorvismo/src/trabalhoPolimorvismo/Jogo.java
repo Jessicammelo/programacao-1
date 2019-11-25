@@ -1,5 +1,6 @@
 package trabalhoPolimorvismo;
 
+//Jéssica Melo
 import java.util.Scanner;
 
 public class Jogo {
@@ -65,23 +66,21 @@ public class Jogo {
 
 		homemDeFerro.adicionaSuperPoder(armadura);
 		homemDeFerro.adicionaSuperPoder(dispositivosEletronicos);
-		
-		//viloes
-		
+
+		// viloes
+
 		Vilao duendeVerde = new Vilao("Duende Verde", "Norman Osbourne", 2);
 
 		SuperPoder forte = new SuperPoder("Força", 5);
 
 		duendeVerde.adicionaSuperPoder(forte);
-		
-		
+
 		Vilao lexLuthor = new Vilao("Lex Luthor", "Lex Luthor", 5);
 
 		SuperPoder menteAgucada = new SuperPoder("Mente Aguçada", 5);
 
 		lexLuthor.adicionaSuperPoder(menteAgucada);
-		
-		
+
 		Vilao bizarro = new Vilao("Bizzaro", "Bizarro", 6);
 
 		SuperPoder voo = new SuperPoder("Voar", 3);
@@ -94,7 +93,6 @@ public class Jogo {
 		bizarro.adicionaSuperPoder(visaoRaioX2);
 		bizarro.adicionaSuperPoder(sobroCongelante2);
 
-		
 		Vilao octopus = new Vilao("Octopus", "Otto Octavius", 4);
 
 		SuperPoder tentaculosIndestrutiveis = new SuperPoder("Tentáculos Indestrutíveis", 5);
@@ -102,16 +100,18 @@ public class Jogo {
 
 		octopus.adicionaSuperPoder(tentaculosIndestrutiveis);
 		octopus.adicionaSuperPoder(velocidade2);
-		
+
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Digite o número para escolher o vilão:\n 1 Duente Verde;\n 2 Lex Luthor;\n 3 Bizarro\n 4 Octopus;");
+		System.out.println(
+				"Digite o número para escolher o vilão:\n 1 Duente Verde;\n 2 Lex Luthor;\n 3 Bizarro\n 4 Octopus;");
 		int vilaoInt = teclado.nextInt();
-		
-		System.out.println("Digite o número para escolher o heroi:\n 1 Chapolin Colorado;\n 2 Homem Aranha;\n 3 Super Homem;\n 4 Capitão América;\n 5 Flash;\n 6 Lanterna Verde;\n 7 Homem de Ferro;");
+
+		System.out.println(
+				"Digite o número para escolher o heroi:\n 1 Chapolin Colorado;\n 2 Homem Aranha;\n 3 Super Homem;\n 4 Capitão América;\n 5 Flash;\n 6 Lanterna Verde;\n 7 Homem de Ferro;");
 		int heroiInt = teclado.nextInt();
-		
+
 		Vilao vilao = null;
-		switch(vilaoInt) {
+		switch (vilaoInt) {
 		case 1:
 			vilao = duendeVerde;
 			break;
@@ -125,11 +125,11 @@ public class Jogo {
 			vilao = octopus;
 			break;
 		}
-		
+
 		SuperHeroi heroi = null;
 		switch (heroiInt) {
 		case 1:
-			heroi = chapolinColorado;			
+			heroi = chapolinColorado;
 			break;
 		case 2:
 			heroi = homemAranha;
@@ -144,20 +144,19 @@ public class Jogo {
 			heroi = flash;
 			break;
 		case 6:
-			heroi =  lanternaVerde;
+			heroi = lanternaVerde;
 			break;
 		case 7:
 			heroi = homemDeFerro;
 			break;
 		}
-			
-		Confronto confronto = new Confronto();
+
 		System.out.println(heroi.getNome() + " versus " + vilao.getNome());
-		if(confronto.executar(heroi, vilao) > 0) {
+		Confronto confronto = new Confronto();
+		if (confronto.executar(heroi, vilao) > 0) {
 			System.out.println("O herói venceu!!\nO vilão ficará " + vilao.getTempoDePrisao() + " anos na prisão!");
-		}else {
-			System.out.println("O vilão venceu!!" );
+		} else {
+			System.out.println("O vilão venceu!!");
 		}
 	}
-
 }
