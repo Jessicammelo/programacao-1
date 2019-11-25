@@ -1,7 +1,7 @@
 package Questao02;
 
 import java.util.Date;
-
+//Jessica Melo
 public class Artigo {
 	// pai
 
