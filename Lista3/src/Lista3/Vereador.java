@@ -1,6 +1,5 @@
 package Lista3;
-
-import java.lang.reflect.Array;
+//Jéssica Melo e Danielle Fernanda Deola
 import java.util.ArrayList;
 
 public class Vereador {
@@ -15,7 +14,7 @@ public class Vereador {
 
 	public void setNome(String nome) {
 		if (nome == null || nome.isEmpty()) {
-			throw new IllegalArgumentException("Nome do vereador inv�lido");
+			throw new IllegalArgumentException("Nome do vereador inválido");
 		}
 		this.nome = nome;
 	}

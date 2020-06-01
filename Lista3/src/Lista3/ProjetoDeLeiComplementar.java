@@ -1,5 +1,5 @@
 package Lista3;
-
+//Jéssica Melo e Danielle Fernanda Deola
 public class ProjetoDeLeiComplementar extends ProjetoDeLei {
 	private String artigoLO;
 	private int quantVotosFavoraveis;

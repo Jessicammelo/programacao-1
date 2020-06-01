@@ -1,8 +1,7 @@
 package Lista3;
-
+//Jéssica Melo e Danielle Fernanda Deola
 import java.util.ArrayList;
 import java.util.HashMap;
-
 import javax.swing.JOptionPane;
 
 public class Camara {
@@ -92,7 +91,7 @@ public class Camara {
 		for (Partido p : this.partidos.values()) {
 			for (Vereador v : p.getVereadores()) {
 				for (ProjetoDeLei pj : v.getProjetosDeLei()) {
-					JOptionPane.showMessageDialog(null,"Vereador: " + v.getNome() + "-" + "Partido: " + p.getNome() + pj.mostrar());
+					JOptionPane.showMessageDialog(null," Vereador: " + v.getNome() + "-" + " Partido: " + p.getNome() + pj.mostrar());
 				}
 
 			}

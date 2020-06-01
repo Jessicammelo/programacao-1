@@ -1,8 +1,7 @@
 package Lista3;
 
-import java.util.ArrayList;
+//Jéssica Melo e Danielle Fernanda Deola
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import javax.swing.JOptionPane;
 import java.awt.event.ActionListener;
@@ -100,7 +99,7 @@ public class Apresentacao extends javax.swing.JFrame {
 					}
 					JOptionPane.showMessageDialog(jTabbedPane1, str);
 				} catch (NumberFormatException nfe) {
-					JOptionPane.showMessageDialog(jTabbedPane1, "Digite um n�mero de partido v�lido");
+					JOptionPane.showMessageDialog(jTabbedPane1, "Digite um número de partido válido");
 				}
 			}
 		});
