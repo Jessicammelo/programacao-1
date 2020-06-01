@@ -23,4 +23,10 @@ public class ArtigoImportante extends Artigo {
 	public String exibirDados() {
 		return exibirDadosAbstratos() + "\nFator importante: " + getFatorImpacto();
 	}
+	
+	public String mostrar() {
+		
+		
+		return "";
+	}
 }

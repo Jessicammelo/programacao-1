@@ -1,5 +1,5 @@
 package AtividadePreparacao;
-
+//Jéssica Maria de Melo e Danielle Fernanda Deola
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -22,6 +22,8 @@ import java.util.Date;
 import java.awt.event.ActionEvent;
 
 public class Cadastro extends JFrame {
+	
+	ListaTelefone listaFone;
 
 	private JPanel contentPane;
 	private JTextField textFieldNome;
@@ -33,7 +35,7 @@ public class Cadastro extends JFrame {
 	JRadioButton rdbtnComercial = new JRadioButton("Comercial");
 	JRadioButton rdbtnEspecializada = new JRadioButton("Especializada");
 	JRadioButton rdbtnResidencial = new JRadioButton("Residencial");
-	JLabel lblNewLabel = new JLabel("New label");
+	JLabel lblNewLabel = new JLabel("");
 
 	/**
 	 * Launch the application.
@@ -145,6 +147,10 @@ public class Cadastro extends JFrame {
 					e1.printStackTrace();
 				}
 				telefone.setNumero(textFieldNumero.getText());
+				float valor = Float.parseFloat(lblNewLabel.getText());
+				telefone.setValorBasico(valor);
+				ListaTelefone.telefones.add(telefone);
+				dispose();
 			}
 		});
 		btnCadastrar.setBounds(246, 227, 89, 23);
@@ -196,6 +202,7 @@ public class Cadastro extends JFrame {
 						lblNewLabel.setText("187.82");
 					}
 				}
+				btnCadastrar.setEnabled(true);
 			}
 		});
 		btnCalcular.setBounds(130, 227, 89, 23);

@@ -1,5 +1,5 @@
 package AtividadePreparacao;
-
+//Jéssica Maria de Melo e Danielle Fernanda Deola
 public class Comercial extends Telefone{
 
 	protected String RamoAtividade;

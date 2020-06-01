@@ -1,14 +1,14 @@
 package AtividadePreparacao;
 
 import java.util.Date;
-
+//Jéssica Maria de Melo e Danielle Fernanda Deola
 public class Telefone {
 
 	protected String nome;
 	protected String endereco;
 	protected Date dataInstalacao = new Date();
 	protected String numero;
-	protected float valorBasico;
+	protected Float valorBasico;
 	
 	public String getNome() {
 		return nome;
@@ -34,7 +34,7 @@ public class Telefone {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-	public float getValorBasico() {
+	public Float getValorBasico() {
 		return valorBasico;
 	}
 	public void setValorBasico(float valorBasico) {
